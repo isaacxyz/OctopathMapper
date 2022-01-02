@@ -12,4 +12,6 @@
     <string name="todo">TODO</string>
     <string name="button">Button</string>
     <string name="map">Map</string>
+    <string name="this_fragment_will_not_be_accessible">This fragment will not be accessible.</string>
+    <string name="reverse_reverse">Reverse! Reverse!</string>
 </resources>
