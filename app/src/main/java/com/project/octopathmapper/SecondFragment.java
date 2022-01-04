@@ -11,6 +11,8 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.project.octopathmapper.databinding.FragmentSecondBinding;
 
+//Note, This fragment is unused and inaccessible. Not currently necessary to achieve the desired functionality.
+
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;

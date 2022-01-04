@@ -25,8 +25,9 @@ public class FirstFragment extends Fragment {
         return binding.getRoot();
 
     }
+//-------------This block is disabled because the button is currently not necessary--------------\\
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+    /*public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
@@ -36,12 +37,15 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
-    }
+    }*/
+
+
+
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+//        binding = null;
     }
 
 }
