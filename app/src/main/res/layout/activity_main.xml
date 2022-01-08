@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--                            Commented out to remove fragments.-->
 <!--    <Button-->
 <!--        android:id="@+id/button"-->
 <!--        android:layout_width="wrap_content"-->
@@ -33,10 +34,9 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="400dp"
-        android:text="@string/map" />
-
+        android:layout_gravity="center"
+        android:text="@string/map"
+        android:textStyle="bold"/>
     <include layout="@layout/content_main" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
