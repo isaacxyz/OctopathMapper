@@ -3,10 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/drawable/beast.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/drawable/ic_baseline_android_24.xml" value="0.3385416666666667" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/drawable/ic_baseline_map_24.xml" value="0.3385416666666667" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.3385416666666667" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3385416666666667" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/drawable/map.xml" value="0.184375" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/activity_map.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/activity_map2.xml" value="0.22" />
         <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/content_main.xml" value="0.22" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/fragment_bestiary.xml" value="0.3223958333333333" />
         <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/fragment_first.xml" value="0.241796875" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/fragment_map.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/layout/fragment_second.xml" value="0.241796875" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/menu/bottom_nav.xml" value="0.3223958333333333" />
+        <entry key="..\:/Users/iwcoo/AndroidStudioProjects/OctopathMapper/app/src/main/res/menu/bottom_nav_menu.xml" value="0.171875" />
       </map>
     </option>
   </component>

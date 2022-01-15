@@ -1,5 +1,6 @@
 package com.project.octopathmapper;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -45,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void goToMap(View view) {
+        Intent toMap = new Intent(this, MapActivity.class);
+        startActivity(toMap);
     }
 
     @Override
