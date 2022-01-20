@@ -38,7 +38,7 @@ public class MapActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //          These scroll declarations are also out of use due to scroll issues
+//        These scroll declarations are also out of use due to scroll issues
 //        scrollY = (ScrollView)findViewById(R.id.svVertical);
 //        scrollYChild = (HorizontalScrollView)findViewById(R.id.hsvHorizontal);
 
