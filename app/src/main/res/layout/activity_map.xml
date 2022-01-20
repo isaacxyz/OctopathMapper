@@ -1,12 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MapActivity">
 
+    <!--NOTE: The layout height of the imageview can be changed to influence the map size relative to the button size. Change to 785dp after adding zoom -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/svVertical">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:id="@+id/hsvHorizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/mapimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/backgroundmap"
+                    android:scaleType="centerCrop">
+
+                </ImageView>
+
+                <ImageButton
+                    android:id="@+id/boulderfall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/church"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginLeft="1200dp"/>
+
+                <ImageButton
+                    android:id="@+id/swarkii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diamond"
+                    android:layout_marginTop="320dp"
+                    android:layout_marginLeft="1500dp"/>
+
+                <ImageButton
+                    android:id="@+id/flamesgrace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cave"
+                    android:layout_marginTop="490dp"
+                    android:layout_marginLeft="1880dp"/>
+
+                <ImageButton
+                    android:id="@+id/atlasdam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/manor"
+                    android:layout_marginTop="700dp"
+                    android:layout_marginLeft="1600dp"/>
+
+                <ImageButton
+                    android:id="@+id/rippletide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trees"
+                    android:layout_marginTop="750dp"
+                    android:layout_marginLeft="1400dp"/>
+
+                <ImageButton
+                    android:id="@+id/cobbleston"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/church"
+                    android:layout_marginTop="900dp"
+                    android:layout_marginLeft="1300dp"/>
+
+                <ImageButton
+                    android:id="@+id/clearbrook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/diamond"
+                    android:layout_marginTop="750dp"
+                    android:layout_marginLeft="1100dp"/>
+
+                <ImageButton
+                    android:id="@+id/sunshade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cave"
+                    android:layout_marginTop="400dp"
+                    android:layout_marginLeft="1000dp"/>
+
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

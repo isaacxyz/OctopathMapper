@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/octopathtitle">
 
 
     <com.google.android.material.appbar.AppBarLayout
@@ -24,13 +25,13 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <Button
-        android:id="@+id/button"
+    <ImageButton
+        android:id="@+id/mainmapbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="goToMap"
-        android:text="@string/map"
+        android:background="@drawable/wmap"
         android:textStyle="bold"/>
     <include layout="@layout/content_main" />
 
@@ -41,7 +42,7 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:srcCompat="@android:drawable/stat_sys_speakerphone"
         tools:ignore="SpeakableTextPresentCheck"
         android:contentDescription="@string/todo" />
 
