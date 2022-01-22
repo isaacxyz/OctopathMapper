@@ -33,19 +33,20 @@ public class MapActivity extends AppCompatActivity {
     private ActivityMapBinding binding;
 
 
-//    These scrollview overrides are currently commented out because of scroll jitter issues. keeping for future use and continued testing
+            //These scrollview overrides are currently commented out because of scroll jitter issues. keeping for future use and continued testing
 //
 //    ScrollView scrollY;
 //    HorizontalScrollView scrollYChild;
 
-        MediaPlayer mPlayer;
+        //MediaPlayer mPlayer;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
 
-            mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.thegateoffinis);
-            mPlayer.start();
+            //media player throwing exception when returning to previous activity
+//            mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.thegateoffinis);
+//            mPlayer.start();
 
 //        These scroll declarations are also out of use due to scroll issues
 //
@@ -58,7 +59,7 @@ public class MapActivity extends AppCompatActivity {
             setContentView(binding.getRoot());
 
 
-//        getWindow function only necessary for activity to successfully run on older SDK versions (with "hide status bar"). Keeping for testing purposes
+            //getWindow function only necessary for activity to successfully run on older SDK versions (with "hide status bar"). Keeping for testing purposes
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -130,15 +131,16 @@ public class MapActivity extends AppCompatActivity {
             });
         }
 
-        @Override
-        protected void onPause() {
-            super.onPause();
-            mPlayer.stop();
-            mPlayer.release();
-            mPlayer.setLooping(true);
-        }
+        //media player throwing exception when returning to previous activity
+//        @Override
+//        protected void onPause() {
+//            super.onPause();
+//            mPlayer.stop();
+//            mPlayer.release();
+//            mPlayer.setLooping(true);
+//        }
 
-//      This entire function is out of commission because it is linked to the scrollview declarations
+        //This entire function is out of commission because it is linked to the scrollview declarations
 //    @Override
 //    public boolean dispatchTouchEvent(MotionEvent event) {
 //        scrollYChild.dispatchTouchEvent(event);
