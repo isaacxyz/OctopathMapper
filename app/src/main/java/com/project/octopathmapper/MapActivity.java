@@ -3,8 +3,10 @@ package com.project.octopathmapper;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.media.MediaPlayer;
 import android.view.WindowManager;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
@@ -30,97 +32,113 @@ public class MapActivity extends AppCompatActivity {
     private AppBarConfiguration appBarConfiguration;
     private ActivityMapBinding binding;
 
-//    These scrollview overrides are currently commented out because of scroll issues. keeping for future use
+
+//    These scrollview overrides are currently commented out because of scroll jitter issues. keeping for future use and continued testing
+//
 //    ScrollView scrollY;
 //    HorizontalScrollView scrollYChild;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        MediaPlayer mPlayer;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+
+            mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.thegateoffinis);
+            mPlayer.start();
 
 //        These scroll declarations are also out of use due to scroll issues
+//
 //        scrollY = (ScrollView)findViewById(R.id.svVertical);
 //        scrollYChild = (HorizontalScrollView)findViewById(R.id.hsvHorizontal);
 
 
-        //setContentView(R.layout.activity_map);
-        binding = ActivityMapBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+            //setContentView(R.layout.activity_map); set content view commented, replaced by binding. still testing
+            binding = ActivityMapBinding.inflate(getLayoutInflater());
+            setContentView(binding.getRoot());
 
 
 //        getWindow function only necessary for activity to successfully run on older SDK versions (with "hide status bar"). Keeping for testing purposes
 //        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
 //                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setTitle("Map");
 
-        binding.boulderfall.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+            setTitle("Map");
 
-        binding.swarkii.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+            binding.boulderfall.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Boulderfall.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
 
-        binding.flamesgrace.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+            binding.swarkii.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Boulderfall... Is it though?", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
 
-        binding.atlasdam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+            binding.flamesgrace.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Boulderfall... Ok not really.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
 
-        binding.rippletide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+            binding.atlasdam.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Boulderfall... Just kidding!", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
 
-        binding.cobbleston.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+            binding.rippletide.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Boulderfall... That's enough of the shenanigans.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
 
-        binding.clearbrook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+            binding.cobbleston.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Bouldersmall.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
 
-        binding.sunshade.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "This is boulderfall", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
+            binding.clearbrook.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Boulderwall.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
 
+            binding.sunshade.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is Boulderbrawl.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
+        }
 
-//      This entire function is commented out because it goes with the scrollview declarations
+        @Override
+        protected void onPause() {
+            super.onPause();
+            mPlayer.stop();
+            mPlayer.release();
+            mPlayer.setLooping(true);
+        }
+
+//      This entire function is out of commission because it is linked to the scrollview declarations
 //    @Override
 //    public boolean dispatchTouchEvent(MotionEvent event) {
 //        scrollYChild.dispatchTouchEvent(event);
