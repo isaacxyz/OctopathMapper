@@ -129,6 +129,14 @@ public class MapActivity extends AppCompatActivity {
                             .setAction("Action", null).show();
                 }
             });
+
+            binding.stillsnow.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Snackbar.make(view, "This is snowderball.", Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            });
         }
 
         //media player throwing exception when returning to previous activity
