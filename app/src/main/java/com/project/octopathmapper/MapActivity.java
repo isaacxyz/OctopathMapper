@@ -2,7 +2,6 @@ package com.project.octopathmapper;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -14,17 +13,16 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.view.MotionEvent;
-
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.navigation.ui.AppBarConfiguration;
 import android.view.View;
 import android.widget.Toolbar;
-
-
-
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.snackbar.Snackbar;
 import com.project.octopathmapper.databinding.ActivityMapBinding;
+
+
+
 
 
 public class MapActivity extends AppCompatActivity {
@@ -148,7 +146,7 @@ public class MapActivity extends AppCompatActivity {
 //            mPlayer.setLooping(true);
 //        }
 
-        //This entire function is out of commission because it is linked to the scrollview declarations
+        //This entire block is out of commission because it is linked to the scrollview declarations
 //    @Override
 //    public boolean dispatchTouchEvent(MotionEvent event) {
 //        scrollYChild.dispatchTouchEvent(event);

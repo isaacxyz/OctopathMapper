@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-
 import com.project.octopathmapper.databinding.FragmentSecondBinding;
+
+
+
+
 
 //Note, This fragment is unused and inaccessible. Currently unnecessary to achieve the desired functionality.
 
