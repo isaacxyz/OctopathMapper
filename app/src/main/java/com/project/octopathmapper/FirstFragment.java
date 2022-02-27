@@ -29,7 +29,8 @@ import com.project.octopathmapper.databinding.FragmentFirstBinding;
 //    }
 //
 //
-////This block is disabled because the button is not currently necessary to achieve desired app functionality. Keeping for testing purposes.
+        //This block is disabled because the button is not currently necessary
+        // to achieve desired app functionality. Keeping for testing purposes.
 //
 //    /*public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
 //        super.onViewCreated(view, savedInstanceState);

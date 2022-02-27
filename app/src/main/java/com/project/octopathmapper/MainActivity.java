@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(binding.toolbar);
 
-                                     //Commented out to remove first fragment.
+
+        //Commented out to remove first fragment.
 
 //        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
 //        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
@@ -73,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-                                    //Commented out to remove second fragment.
+
+        //Commented out to remove second fragment.
 
 //    @Override
 //    public boolean onSupportNavigateUp() {

@@ -31,7 +31,8 @@ public class MapActivity extends AppCompatActivity {
     private ActivityMapBinding binding;
 
 
-            //These scrollview overrides are currently commented out because of scroll jitter issues. keeping for future use and continued testing
+        //These scrollview overrides are currently commented out because
+        //of scroll jitter issues. keeping for future use and continued testing
 //
 //    ScrollView scrollY;
 //    HorizontalScrollView scrollYChild;
@@ -46,7 +47,7 @@ public class MapActivity extends AppCompatActivity {
 //            mPlayer = MediaPlayer.create(getApplicationContext(), R.raw.thegateoffinis);
 //            mPlayer.start();
 
-//        These scroll declarations are also out of use due to scroll issues
+        //These scroll declarations are also out of use due to scroll issues
 //
 //        scrollY = (ScrollView)findViewById(R.id.svVertical);
 //        scrollYChild = (HorizontalScrollView)findViewById(R.id.hsvHorizontal);
@@ -115,7 +116,7 @@ public class MapActivity extends AppCompatActivity {
             binding.clearbrook.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Snackbar.make(view, "This is Boulderwall.", Snackbar.LENGTH_LONG)
+                    Snackbar.make(view, "This is Wonderwall.", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
                 }
             });
@@ -146,7 +147,10 @@ public class MapActivity extends AppCompatActivity {
 //            mPlayer.setLooping(true);
 //        }
 
-        //This entire block is out of commission because it is linked to the scrollview declarations
+
+        //This entire block is out of commission because
+        //it is linked to the scrollview declarations
+
 //    @Override
 //    public boolean dispatchTouchEvent(MotionEvent event) {
 //        scrollYChild.dispatchTouchEvent(event);
